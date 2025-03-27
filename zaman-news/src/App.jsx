@@ -1,17 +1,20 @@
-import { Container } from "@mui/material";
 import React from "react";
-import ReactCodeInput from "react-code-input";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import Signup from './pages/Signup';
+import Login from './pages/Login';
+import Landing from './pages/Landing';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <h1>Zaman News</h1>
-      </header>
-      <Container className="App-container">
-       
-      </Container>
-    </div>
+    <Router>
+          <Routes>
+            <Route path="/" element={<Landing />} />
+            <Route path="/home" element={<Home />} />
+            <Route path="/signup" element={<Signup />} />
+            <Route path="/login" element={<Login />} />
+          </Routes>
+    </Router>
   );
 }
 

@@ -1,8 +1,10 @@
 # app.py
 
-
-# venv\Scripts\activate
-# set SECRET_KEY=
+# WIN:
+# CREATE VIRTUAL ENV: `python -m virtualenv venv`
+# ACTIVATE THE CREATED VENV: `venv\Scripts\activate`
+# SET ENV VARIABLES: `set SECRET_KEY=`
+# RUN: `python app.py`/`python -m flask run`/`flask run`/`flask --app app.py run`
 
 from flask import Flask, request, jsonify
 from flask_cors import CORS

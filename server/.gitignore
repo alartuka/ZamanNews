@@ -1,0 +1,4 @@
+
+# misc
+/venv
+.env.local
