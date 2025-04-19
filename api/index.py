@@ -5,7 +5,6 @@ import requests
 import os
 import json
 from dotenv import load_dotenv
-import serverless_wsgi
 
 load_dotenv()
 
@@ -43,11 +42,8 @@ def main():
 
     return jsonify(data['articles'])
 
+# if __name__ == '__main__':
+#     app.run(debug=True)
 
-# Handler for serverless app deployed on vercel
-def handler(event, context):
-    return serverless_wsgi.handle_request(app, event, context)
-
-
-if __name__ == '__main__':
-    app.run(debug=True)
+# if __name__ == "__main__":
+#     app.run()

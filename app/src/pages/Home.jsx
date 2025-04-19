@@ -63,7 +63,7 @@ function Home() {
 
     console.log(data);
 
-    fetch('http://127.0.0.1:5000/articles', {
+    fetch('/articles', {
       method: "POST",
       headers: {"Content-Type": "application/json"},
       body: JSON.stringify(data)
@@ -99,8 +99,8 @@ function Home() {
   // ========== LOADING PAGE ==========
   if (loading) {
     return (
-      <Box sx={{ top: 0, left: 0, display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', height: '100%' }}>
-        <CircularProgress color="secondary" size={80} />
+      <Box sx={{ top: 50, left: 0, display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', height: '100%' }}>
+        <CircularProgress size={200} />
         <Typography variant="h4" sx={{ marginTop: '20px', color: 'primary.main', textAlign: 'center' }}>
           Loading historical headlines...
         </Typography>
