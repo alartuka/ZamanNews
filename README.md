@@ -1,4 +1,4 @@
-# ZamanNews | IN PROGRESS
+# ZamanNews 
 ## A Historical News Time Machine
 
 A website that allows users to view news articles from the past on any given date and country.
